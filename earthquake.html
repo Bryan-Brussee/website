@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Earthquake</title>
+
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="js/jquery-3.2.0.min.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/navbar.js"></script>
+
+
+
+  <!-- CMD+SHIFT+P  command palette -> reindent -->
+
+</head>
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Bryan Brussee</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav"></ul>
+
+        <ul class="nav navbar-nav navbar-right">
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Words and Pictures <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+
+              <li><a href="http://www.idsnews.com/staff/bryan-brussee" target="_blank">The Indiana Daily Student</a></li>
+              <li><a href="http://thequietus.com/users/16691" target="_blank">The Quietus</a></li>
+
+              <li role="separator" class="divider"></li>
+              <li><a href="http://mediaschool.indiana.edu/iunewsnet/esports-smash-into-the-mainstream/" target="_blank">eSports (Multimedia project)</a></li>
+<!--               <li><a href="bees.html">Bloomington's Bees (Data project)</a></li>
+ -->
+              <li><a href="science_forecast.html">Science Forecast (Video production)</a></li>
+
+              <li><a href="pine_leaf.html">Pine Leaf Boys (Video production)</a></li>
+
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="life_expectancy_by_income.html">Life expectancy by income per capita (D3)</a></li>
+              <li><a href="sankey.html">Australian asylum-seeker flow (D3)</a></li>
+              <li><a href="ring_diagram.html">Asylum-seeker demographics (D3)</a></li>
+              <li><a href="earthquake.html">Earthquake magnitude map (Leaflet)</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="http://specials.idsnews.com/woman-in-the-van/" target="_blank"> Lady in the Van (Bootstrap and Tableau)</a></li>
+              <li><a href="http://www.idsnews.com/article/2017/04/little-500-concert-canceled" target="_blank">Daily news infographic example (CodePen)</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="https://github.com/Bryan-Brussee" target="_blank">Github</a></li>
+
+
+
+            </ul>
+          </li>
+
+          <li><a href="assets/Brussee_resume.pdf" target="_blank">Résumé</a></li>
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="mailto:bryanbrussee17@gmail.com"><i class="fa fa-envelope fa-2x"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/bryan-brussee/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+
+            </ul>
+          </li>
+        </ul>
+
+
+      </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container-fluid -->
+
+  </nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Earthquake by magnitude</h2>
+            <hr>
+            <div id="map" style="width: 100%; height: 600px;"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">         
+            <p>The above map was built with Leaflet and D3 and based off of a <a href="http://bl.ocks.org/d3noob/9267535" target="_blank">tutorial</a> developed by <a href="https://leanpub.com/u/d3noob" target="_blank">Malcolm Mclean</a>. Data was gathered from <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php" target="_blank">USGS earthquake database</a>.</p>
+
+            <p>The size of each circle corresponds to that earthquake's magnitude. Logarithmic scaling was employed for general readability.</p>
+            
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<footer> <ul class="footer-text">Bryan Brussee | 2017</ul> </footer>
+</body>
+<script src="js/map_render.js"></script>
+
+</html>

@@ -1,0 +1,15 @@
+    .svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#donut-charts {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-left:0%;
+    padding-bottom: 0; /* aspect ratio */
+    vertical-align: middle;
+    overflow: hidden;
+}

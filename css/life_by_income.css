@@ -1,0 +1,17 @@
+.dot {
+fill-opacity: 0.5;
+}
+
+.label {
+    fill: black;
+    font-size: 12px;
+}
+
+.x .label {
+	text-anchor: end;
+}
+
+.y .label {
+	text-anchor: start;
+}
+

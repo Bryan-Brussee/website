@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Life expectancy by income</title>
+  <!--   <link rel="stylesheet" href="css/life_by_income.css">-->  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/life_by_income.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--   scripts -->
+
+
+  <!-- FAVICON -->  
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+
+</head>
+
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Bryan Brussee</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav"></ul>
+
+        <ul class="nav navbar-nav navbar-right">
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Words and Pictures <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+
+              <li><a href="http://www.idsnews.com/staff/bryan-brussee" target="_blank">The Indiana Daily Student</a></li>
+              <li><a href="http://thequietus.com/users/16691" target="_blank">The Quietus</a></li>
+
+              <li role="separator" class="divider"></li>
+              <li><a href="http://mediaschool.indiana.edu/iunewsnet/esports-smash-into-the-mainstream/" target="_blank">eSports (Multimedia project)</a></li>
+<!--               <li><a href="bees.html">Bloomington's Bees (Data project)</a></li>
+ -->
+              <li><a href="science_forecast.html">Science Forecast (Video production)</a></li>
+
+              <li><a href="pine_leaf.html">Pine Leaf Boys (Video production)</a></li>
+
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="life_expectancy_by_income.html">Life expectancy by income per capita (D3)</a></li>
+              <li><a href="sankey.html">Australian asylum-seeker flow (D3)</a></li>
+              <li><a href="ring_diagram.html">Asylum-seeker demographics (D3)</a></li>
+              <li><a href="earthquake.html">Earthquake magnitude map (Leaflet)</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="http://specials.idsnews.com/woman-in-the-van/" target="_blank"> Lady in the Van (Bootstrap and Tableau)</a></li>
+              <li><a href="http://www.idsnews.com/article/2017/04/little-500-concert-canceled" target="_blank">Daily news infographic example (CodePen)</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="https://github.com/Bryan-Brussee" target="_blank">Github</a></li>
+
+
+
+            </ul>
+          </li>
+
+          <li><a href="assets/Brussee_resume.pdf" target="_blank">Résumé</a></li>
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="mailto:bryanbrussee17@gmail.com"><i class="fa fa-envelope fa-2x"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/bryan-brussee/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+
+            </ul>
+          </li>
+        </ul>
+
+
+      </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container-fluid -->
+
+  </nav>
+<div class="content">
+
+<h2>Life expectancy by income per capita</h2>
+<hr>
+
+<p id="chart"></p>
+
+<p>Built with JavaScript's D3 library and data from <a href="http://www.gapminder.org/" target="_blank">GapMinder</a>, this chart plots average life expectancy as a function of income per capita. Logarithmic scaling is employed on the X axis to save space and increase general readability. </p>
+
+<p>When viewed in this fashion, the positive correlation between these two variables becomes clear.</p>
+</div>
+<footer> <ul class="footer-text">Bryan Brussee | 2017</ul> </footer>
+
+
+  <script src="js/jquery-3.2.0.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+  <script src="js/life_by_income.js"></script>
+
+</body>
+</html>

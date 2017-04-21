@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Asylum-seeker composition on Manus and Nauru</title>
+
+    <!-- styles, concatenate them before publishing -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ring_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300|Lato:400,300|Lora' rel='stylesheet' type='text/css'>
+
+    <!-- FAVICON -->  
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Bryan Brussee</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav"></ul>
+
+        <ul class="nav navbar-nav navbar-right">
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Words and Pictures <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+
+              <li><a href="http://www.idsnews.com/staff/bryan-brussee" target="_blank">The Indiana Daily Student</a></li>
+              <li><a href="http://thequietus.com/users/16691" target="_blank">The Quietus</a></li>
+
+              <li role="separator" class="divider"></li>
+              <li><a href="http://mediaschool.indiana.edu/iunewsnet/esports-smash-into-the-mainstream/" target="_blank">eSports (Multimedia project)</a></li>
+<!--               <li><a href="bees.html">Bloomington's Bees (Data project)</a></li>
+ -->
+              <li><a href="science_forecast.html">Science Forecast (Video production)</a></li>
+
+              <li><a href="pine_leaf.html">Pine Leaf Boys (Video production)</a></li>
+
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="life_expectancy_by_income.html">Life expectancy by income per capita (D3)</a></li>
+              <li><a href="sankey.html">Australian asylum-seeker flow (D3)</a></li>
+              <li><a href="ring_diagram.html">Asylum-seeker demographics (D3)</a></li>
+              <li><a href="earthquake.html">Earthquake magnitude map (Leaflet)</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="http://specials.idsnews.com/woman-in-the-van/" target="_blank"> Lady in the Van (Bootstrap and Tableau)</a></li>
+              <li><a href="http://www.idsnews.com/article/2017/04/little-500-concert-canceled" target="_blank">Daily news infographic example (CodePen)</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="https://github.com/Bryan-Brussee" target="_blank">Github</a></li>
+
+
+
+            </ul>
+          </li>
+
+          <li><a href="assets/Brussee_resume.pdf" target="_blank">Résumé</a></li>
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="mailto:bryanbrussee17@gmail.com"><i class="fa fa-envelope fa-2x"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/bryan-brussee/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+
+            </ul>
+          </li>
+        </ul>
+
+
+      </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container-fluid -->
+
+  </nav>
+<div class="content">
+<h2>Asylum countries for Iran, Myanmar and Sudan <br>(2013-2015)</h2>
+<hr>
+
+
+
+<div id="donut-charts"></div>
+
+
+<p>Built in collaboration with Roger Cohen of <i>The New York Times</i>, the above diagram shows where Iranian, stateless Rohingya and Sudanese refugees went after fleeing their home countries between 2013 and 2015. The visualization above is a repurposed version of code found <a href="http://bl.ocks.org/erichoco/6694616" target="_blank">here</a> and uses data gathered from Australia's <a href="http://newsroom.border.gov.au/channels/Operation-Sovereign-Borders" target="_blank">monthly OSB reports</a>.</p> 
+
+<p>When viewed this way, it becomes easy to see how the vast majority of asylum-seekers migrate based on geographic proximity. Chad, Myanmar and Bangladesh receive the most refugees, because they each neighbor one of the three countries in question. In contrast, the West receives relatively few of these people. Germany receives the most out of any country in the West yet still receive less than 2% of the total refugees from the three countries in question.</p>
+
+<p>Australia took in about 21,000 people between 2013 and 2015, less than half a percent of the world's total asylum seekers from Iran, Myanmar and Sudan. Some of these people ended up in Australia's <a href="https://www.nytimes.com/2016/12/09/opinion/sunday/australia-refugee-prisons-manus-island.html?_r=0" target="_blank">island prisons</a>.</p>
+
+</div>
+
+<footer> <ul class="footer-text">Bryan Brussee | 2017</ul> </footer>
+
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="js/ring_diagram.js"></script>
+
+</body>
+</html>
