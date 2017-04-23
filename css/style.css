@@ -35,9 +35,7 @@ hr {
 }
 
 img.photo {
-	padding-top: 10px;
-	padding-bottom:10px;
-	width: 70%;
+	padding: 10px;
 }
 
 iframe {
