@@ -44,11 +44,21 @@ iframe {
 
 }
 
+.descrip {
+	padding-top: 2rem;
+
+}
+
 footer {
-	background-color: #f8f8f8;
+	background-color: #f5f5f5;
 	border-top: thick double #e7e7e7;
 	height: 50px;
 	margin-top: 20px;
+}
+
+.container-fluid {
+	background-color: #f5f5f5;
+
 }
 
 ul.footer-text {
